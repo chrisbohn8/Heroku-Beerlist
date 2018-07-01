@@ -1,10 +1,9 @@
 <%= stylesheet_link_tag 'form', media: 'all' %>
 <title>Beer Index</title>
-<header>Beer Index</header>
-
-<h2><%= link_to 'Add New Beer', new_beer_path %></h2>
 
 <h2><%= link_to 'Beer List', beers_beerlist_path %></h2>
+
+<header>Beer Index</header>
 
 <h2 class="beer-selection-header">Beers On Tap</h2>
   <ol>
@@ -24,3 +23,4 @@
   <% end %>
   </ul>
 
+<h2><%= link_to 'Add New Beer', new_beer_path %></h2>
