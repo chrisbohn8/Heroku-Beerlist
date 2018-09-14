@@ -4,8 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ENBW Beer List</title>
-  <link rel="stylesheet" href="assets/css/portrait-menu.css" />
-<%= stylesheet_link_tag 'portrait-menu', media: 'all' %>
+  <link rel="stylesheet" href="assets/css/tier-2.css" />
+<%= stylesheet_link_tag 'tier-2', media: 'all' %>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet"/>
   <!-- <meta http-equiv="refresh" content="3000"> -->
 </head>
@@ -16,7 +16,7 @@
   <div id="beers">
 
   <% @beers.each do |beer| %>
-	<% if beer.ontap == true && beer.tier != "1" %>
+	<% if beer.ontap == true && beer.tier == "2" %>
     	<div id="modalBtn<%= beer.image.chomp('.svg') %>" class="modalBtn<%= beer.image %> beer">
 			<div class="logo-and-text">
 				<% if beer.image == "enbwlogo.svg" %>
@@ -43,6 +43,33 @@
 	<% end %>
   <% end %>
 
+  <% @beers.each do |beer| %>
+	<% if beer.ontap == true && beer.tier == "*" %>
+    	<div id="modalBtn<%= beer.image.chomp('.svg') %>" class="modalBtn<%= beer.image %> beer">
+			<div class="logo-and-text">
+				<% if beer.image == "enbwlogo.svg" %>
+				<%= image_tag (beer.image), :class => "enbw-logo" %>
+				<% else %>
+				<%= image_tag (beer.image), :class => "beer-logo" %>
+				<% end %>
+				<div class="beer-text">
+					<div class="beer-name"><%= beer.name %></div>
+					<div class="beer-tagline"><%= beer.tagline %></div>
+				</div>
+			</div>
+		        <div class="abv-and-tier">
+		        	<div class="beer-abv">
+		          		<div class="abv-text">ABV</div>
+				        <div class="abv-content"><%= beer.abv %>%</div>
+		        	</div>
+		       		<div class="beer-tier">
+		         		<div class="beer-tier-text">TIER</div>
+		          		<div class="beer-tier-content"><%= beer.tier %></div>
+		        	</div>
+		      	</div>
+		</div>
+	<% end %>
+  <% end %>
 
     <div id="wine-cider" class="beer">
 	<%= image_tag ("wine-cider.svg"), :id => "wine-cider" %>
@@ -61,6 +88,7 @@
   </div>
 </div>
 <div class="tier-pricing">
+<!--
     <div class="tier">
       <div class="tier-main-name">TIER 1</div>
       <div class="taster">
@@ -84,6 +112,7 @@
         <div class="tier-content">$13</div>
       </div>
     </div>
+-->
     <div id="tier-2" class="tier">
       <div class="tier-main-name">TIER 2</div>
       <div class="taster">
