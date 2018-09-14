@@ -1,8 +1,16 @@
 class BeersController < ApplicationController
 
-  http_basic_authenticate_with name: "enbw", password: "seanthony5150", except: [:beerlist, :index, :show]
+  http_basic_authenticate_with name: "enbw", password: "seanthony5150", except: [:beerlist, :index, :show, :tier1list, :tier2list]
 
 	def beerlist
+		@beers = Beer.all
+	end
+
+	def tier1list
+		@beers = Beer.all
+	end
+
+	def tier2list
 		@beers = Beer.all
 	end
 
