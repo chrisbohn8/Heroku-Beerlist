@@ -4,7 +4,7 @@ body {
 }
 
 html {
-	font-size: 16.5pt;
+	font-size: 18.5pt;
 }
 
 ul {
@@ -35,7 +35,7 @@ ul {
 
 .abv-content,
 .beer-tier-content {
-    font-family: RobotoSlab;
+    font-family: Roboto;
     font-weight: bold;
     text-align: center;
     color: #233746;
@@ -44,7 +44,7 @@ ul {
 }
 
 .guest-name {
-    font-family: RobotoSlab;
+    font-family: Roboto;
     font-weight: bold;
     text-align: right;
     color: #233746;
@@ -53,13 +53,13 @@ ul {
 }
 
 .guest-price {
-    font-family: RobotoSlab;
+    font-family: Roboto;
     font-weight: bold;
     color: #233746;
 }
 
 .tier-main-name {
-    font-family: RobotoSlab;
+    font-family: Roboto;
     font-weight: bold;
     font-size: 1.875rem;
     color: #6e757b;
@@ -73,7 +73,7 @@ ul {
 }
 
 .tier-content {
-    font-family: RobotoSlab;
+    font-family: Roboto;
     font-weight: bold;
     font-size: 2rem;
     color: #233746;
@@ -106,7 +106,7 @@ a:link {
 	display: flex;
     margin: -3.75rem auto;
     width: 97%;
-	height: 90%;
+	height: 89%;
     box-shadow: 0 0.6875rem 32.125rem 0 rgba(151,145,135,0.16);
 }
 
