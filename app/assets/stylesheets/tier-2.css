@@ -174,13 +174,14 @@ a:link {
 .wine-cider-img {
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 1.5rem;
 }
 
 #wine-cider-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-top: 2rem;
+	margin-top: -1rem;
 }
 
 .guest-total {
