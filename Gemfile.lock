@@ -169,8 +169,5 @@ DEPENDENCIES
   turbolinks
   uglifier
 
-RUBY VERSION
-   ruby 2.4.4p296
-
 BUNDLED WITH
-   1.16.2
+   1.17.1

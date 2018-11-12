@@ -16,6 +16,7 @@
   <div id="beers">
 
   <% @beers.each do |beer| %>
+  <% @beers.index.sort %>
 	<% if beer.ontap == true %>
     	<div id="modalBtn<%= beer.image.chomp('.svg') %>" class="modalBtn<%= beer.image %> beer">
 			<div class="logo-and-text">
